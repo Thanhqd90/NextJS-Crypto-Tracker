@@ -1,17 +1,18 @@
 import Head from "next/head";
 import SearchBar from "../components/SearchBar";
-import styles from "../styles/Home.module.css";
+import Coins from "../components/Coins";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Crypto Tracker</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1>Homepage</h1>
 
-      <SearchBar />
+      <SearchBar type="text" placeholder="Enter currency" />
+      <Coins />
     </div>
   );
 }
